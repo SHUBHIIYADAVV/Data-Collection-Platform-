@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="bg" src="bg.jpg" alt="LNCT Bhopal">
+        <h1>Welcome to LNCT Travel Form</h1>
+        <p>Enter your details to confirm your participation</p>
+        <p class ="submitmsg">Thank You for submitting your form . We are happy to see you joining us for the US Trip</p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id = "name" placeholder="Enter your name">
+            <input type="text" name= "age" id=""age placeholder="Enter your age">
+            <input type="text" name="Gender" id = "gender" placeholder="Enter your gender">
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other information here "></textarea>
+            <button class="btn">Submit</button>
+            
+        </form> 
+    </div>
+    <script src="index.js"></script>
+    INSERT INTO `trip` (`sno`, `name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('1', 'SHUBHI', '22', 'female', 'shubhi@gmail.com', '9555296818', 'This is my first ever php message', current_timestamp());
+    
+</body>
+</html>
